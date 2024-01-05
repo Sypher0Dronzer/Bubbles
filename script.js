@@ -9,7 +9,8 @@ const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 
 // Add three color stops
 gradient.addColorStop(0, "white");
-gradient.addColorStop(0.2, "gold");
+gradient.addColorStop(0.2, "lightblue");
+gradient.addColorStop(0.4, "gold");
 gradient.addColorStop(1, "orangered");
 
 const particleCount=700
@@ -65,7 +66,7 @@ class Particle {
       let dx = this.x - this.effect.mouse.x;
       let distance = Math.hypot(dx, dy);
       if (distance < this.effect.mouse.radius && this.radius<this.maxradius) {
-        this.radius+=1.5
+        this.radius+=1
       }      
     }
     if(this.radius>this.minradius){
