@@ -3,6 +3,7 @@ let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+console.log(screen.width/7);
 //ctx.createLinearGradient(startX, StartY, EndX, EndY)
 const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 
